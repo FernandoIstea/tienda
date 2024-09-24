@@ -46,7 +46,7 @@ export function retornarFilaProductosABM(producto) {
                 <td id="pImagen">${producto.imagen}</td>
                 <td id="nombre">${producto.nombre}</td>
                 <td id="price">${formatearImporte(producto.precio)}</td>
-                <td id="categoria">${producto.categoria}</td>
+                <td id="categoria">${producto.categoria || 'N/A'}</td>
                 <td id="delButton" 
                     data-codigo="${producto.id}" 
                     title="Clic para eliminar">
